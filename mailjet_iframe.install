@@ -1,0 +1,23 @@
+<?php
+
+declare(strict_types=1);
+
+
+use \Drupal\user\Entity\Role;
+
+/**
+ * @file
+ * Install, update and uninstall functions for the Mailjet iframe module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function mailjet_iframe_install() {
+  /** @var $role Role */
+  $role = Role::load('editor');
+  if ($role) {
+    $role->grantPermission('use mailjet_iframe');
+    $role->save();
+  }
+}

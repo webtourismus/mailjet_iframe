@@ -1,0 +1,12 @@
+mailjet_iframe.settings:
+  title: 'Mailjet Iframe'
+  description: 'Configure account settings for Mailjet marketing newsletters.'
+  parent: system.admin_config_services
+  route_name: mailjet_iframe.settings
+
+gin_custom.newsletter:
+  title: 'Newsletter'
+  route_name: mailjet_iframe.app
+  menu_name: editor
+  description: '/libraries/fa6/svgs/regular/at.svg'
+  weight: 6000

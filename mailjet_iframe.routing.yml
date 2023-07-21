@@ -1,0 +1,19 @@
+mailjet_iframe.app:
+  path: '/admin/mailjet'
+  defaults:
+    _title: 'Mailjet Newsletter'
+    _controller: '\Drupal\mailjet_iframe\Controller\MailjetIframeController::build'
+  requirements:
+    _permission: 'use mailjet_iframe'
+  options:
+    _admin_route: TRUE
+
+mailjet_iframe.settings:
+  path: '/admin/config/services/mailjet'
+  defaults:
+    _title: 'Mailjet Iframe settings'
+    _form: 'Drupal\mailjet_iframe\Form\SettingsForm'
+  requirements:
+    _permission: 'administer mailjet_iframe'
+  options:
+    _admin_route: TRUE

@@ -1,0 +1,14 @@
+{
+    "name": "webtourismus/mailjet_iframe",
+    "description": "Integrates Mailjet marketing newsletter UI as iframes into Drupal admin UI.",
+    "type": "drupal-module",
+    "authors": [
+        {
+            "name": "Reinhard Hutter",
+            "email": "reinhard.hutter@webtourismus.at"
+        }
+    ],
+    "require": {
+        "drupal/core": "^10"
+    }
+}

@@ -1,0 +1,6 @@
+use mailjet_iframe:
+  title: 'Use the Mailjet newsletter app'
+
+administer mailjet_iframe:
+  title: 'Administer mailjet_iframe configuration'
+  restrict access: true
