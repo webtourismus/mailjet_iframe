@@ -1,6 +1,6 @@
 name: Mailjet Iframe
 type: module
 description: Integrates the Mailjet UI as iframes into the Drupal admin UI
-core_version_requirement: ^10
+core_version_requirement: ^10.3 || ^11
 configure: mailjet_iframe.settings
-version: 1.0.0
+version: 1.1.0
