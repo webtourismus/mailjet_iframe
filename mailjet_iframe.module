@@ -1,0 +1,13 @@
+<?php
+
+declare(strict_types = 1);
+
+/**
+ * Adds CSS to all pages for admin users.
+ */
+function mailjet_iframe_page_attachments_alter(array &$page): void {
+  if (_gin_toolbar_gin_is_active()) {
+    $page['#attached']['library'][] = 'mailjet_iframe/admin';
+  }
+}
+

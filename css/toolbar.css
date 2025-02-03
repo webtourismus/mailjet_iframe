@@ -1,0 +1,9 @@
+/**
+ * mailjet_iframe is not parsed by tailwind_jit when using the admin theme, therefore add
+ * the styling manually. But we must still use tailwind class names, because they are
+ * also parsed in gin_custom's dashboard admin controller.
+ */
+.before\:\!\[mask-image\:url\(\/libraries\/fa6\/svgs\/regular\/at\.svg\)\]::before {
+  -webkit-mask-image: url(/libraries/fa6/svgs/regular/at.svg) !important;
+  mask-image: url(/libraries/fa6/svgs/regular/at.svg) !important;
+}

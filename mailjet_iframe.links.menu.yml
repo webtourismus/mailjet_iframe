@@ -8,5 +8,8 @@ gin_custom.newsletter:
   title: 'Newsletter'
   route_name: mailjet_iframe.app
   menu_name: editor
-  description: '/libraries/fa6/svgs/regular/at.svg'
   weight: 6000
+  options:
+    attributes:
+      class:
+        - 'before:![mask-image:url(/libraries/fa6/svgs/regular/at.svg)]'
