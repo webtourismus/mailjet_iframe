@@ -119,8 +119,8 @@ class SettingsForm extends ConfigFormBase {
     if (!empty($curlOptions)) {
       curl_setopt_array($curl, $curlOptions);
     }
-    $result = curl_exec($curl);
-    curl_close($curl);
-    return $result;
+    // The handle is released when $curl goes out of scope; curl_close() has
+    // no effect since PHP 8.0 and is deprecated since PHP 8.5.
+    return curl_exec($curl);
   }
 }

@@ -14,7 +14,7 @@ use \Drupal\user\Entity\Role;
  * Implements hook_install().
  */
 function mailjet_iframe_install() {
-  /** @var $role Role */
+  /** @var \Drupal\user\Entity\Role|null $role */
   $role = Role::load('editor');
   if ($role) {
     $role->grantPermission('use mailjet_iframe');
